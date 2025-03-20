@@ -42,7 +42,10 @@ def find_devices_on_lan(interface=None, timeout=10):
         else:
             capture = pyshark.LiveCapture(display_filter="arp or ip")
 
-        print(f"Capturing traffic on interface '{capture.sniffed_on}' for {timeout} seconds...")
+        if capture.interfaces: # Check to see if there is an interface.
+            print(f"Capturing traffic on interface '{capture.interfaces[0]}' for {timeout} seconds...")
+        else:
+            print(f"Capturing traffic for {timeout} seconds...")
         capture.sniff(timeout=timeout)
 
         for packet in capture:

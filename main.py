@@ -17,10 +17,9 @@ def get_local_network_ips():
     return local_ips
 
 def get_tshark_interfaces():
-    """Retrieves a list of network interfaces using tshark."""
     try:
-        process = subprocess.run(['tshark', '-D'], capture_output=True, text=True, check=True)
-        interfaces = [line.split('. ')[1] for line in process.stdout.strip().split('\n')]
+        output = subprocess.check_output(['tshark', '-D'], text=True)  # Use text=True for string output
+        interfaces = [line.split('. ')[1] for line in output.strip().split('\n')]
         return interfaces
     except subprocess.CalledProcessError as e:
         print(f"Error retrieving interfaces: {e}")

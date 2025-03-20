@@ -1,5 +1,6 @@
 import pyshark
 import netifaces
+import subprocess
 
 def get_local_network_ips():
     """Gets the IP addresses of the local machine's network interfaces."""
@@ -14,6 +15,19 @@ def get_local_network_ips():
             # Handle potential permission errors or interfaces that don't exist
             pass
     return local_ips
+
+def get_tshark_interfaces():
+    """Retrieves a list of network interfaces using tshark."""
+    try:
+        process = subprocess.run(['tshark', '-D'], capture_output=True, text=True, check=True)
+        interfaces = [line.split('. ')[1] for line in process.stdout.strip().split('\n')]
+        return interfaces
+    except subprocess.CalledProcessError as e:
+        print(f"Error retrieving interfaces: {e}")
+        return []
+    except FileNotFoundError:
+        print("tshark not found. Ensure tshark is installed and in your PATH.")
+        return []
 
 def find_devices_on_lan(interface=None, timeout=10):
     """
@@ -60,21 +74,22 @@ def find_devices_on_lan(interface=None, timeout=10):
         print(f"MAC Address: {mac}, IP Address: {ip}")
 
 if __name__ == "__main__":
-    available_interfaces = pyshark.list_interfaces()
-    print("Available network interfaces:")
-    for i, iface in enumerate(available_interfaces):
-        print(f"{i+1}. {iface}")
+    available_interfaces = get_tshark_interfaces()
+    if available_interfaces:
+        print("Available network interfaces:")
+        for i, iface in enumerate(available_interfaces):
+            print(f"{i+1}. {iface}")
 
-    interface_choice = input("Enter the number of the interface to capture on (or leave blank for auto-detection): ")
-    selected_interface = None
-    if interface_choice:
-        try:
-            index = int(interface_choice) - 1
-            if 0 <= index < len(available_interfaces):
-                selected_interface = available_interfaces[index]
-            else:
-                print("Invalid interface number.")
-        except ValueError:
-            print("Invalid input.")
+        interface_choice = input("Enter the number of the interface to capture on (or leave blank for auto-detection): ")
+        selected_interface = None
+        if interface_choice:
+            try:
+                index = int(interface_choice) - 1
+                if 0 <= index < len(available_interfaces):
+                    selected_interface = available_interfaces[index]
+                else:
+                    print("Invalid interface number.")
+            except ValueError:
+                print("Invalid input.")
 
-    find_devices_on_lan(interface=selected_interface)
+        find_devices_on_lan(interface=selected_interface)

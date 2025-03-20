@@ -65,7 +65,7 @@ def find_devices_on_lan(interface=None, timeout=10):
     except Exception as e:
         print(f"An error occurred: {e}")
     finally:
-        if 'capture' in locals() and capture.is_alive():
+         if 'capture' in locals() and 'capture' in globals():
             capture.close()
 
     print("\nDevices found on the local network:")

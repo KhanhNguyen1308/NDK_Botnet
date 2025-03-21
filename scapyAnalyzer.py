@@ -29,11 +29,111 @@ class NetworkTrafficAnalyzer:
             first_three_octets = mac.replace(':', '').replace('-', '').upper()[0:6]
             # This would be replaced with a proper MAC/OUI lookup
             vendors = {
-                '000000': 'Unknown',
-                # Add common vendors here
                 'FCFBFB': 'Apple',
-                '00259C': 'Cisco',
-                '002275': 'Samsung'
+            '00CDFE': 'Apple',
+            '88C663': 'Apple',
+            '3C0754': 'Apple',
+            '34C059': 'Apple',
+            '9CF48E': 'Apple',
+            
+            # Cisco devices
+            '00259C': 'Cisco',
+            '7CCB0D': 'Cisco',
+            '58AC78': 'Cisco',
+            'E05FB9': 'Cisco',
+            '00162B': 'Cisco',
+            
+            # Samsung devices
+            '002275': 'Samsung',
+            '5CF6DC': 'Samsung',
+            'F42B48': 'Samsung',
+            '347195': 'Samsung',
+            '8C7712': 'Samsung',
+            
+            # Intel devices
+            '0C8BFD': 'Intel',
+            '00AA00': 'Intel',
+            '001517': 'Intel',
+            '0022FA': 'Intel',
+            
+            # Dell devices
+            '001422': 'Dell',
+            '002219': 'Dell',
+            'F8BC12': 'Dell',
+            'D067E5': 'Dell',
+            '5CF9DD': 'Dell',
+            
+            # HP devices
+            '0016B9': 'HP',
+            '001B78': 'HP',
+            '1458D0': 'HP',
+            '9457A5': 'HP',
+            
+            # Huawei devices
+            '00E0FC': 'Huawei',
+            '48DB50': 'Huawei',
+            '80FB06': 'Huawei',
+            '00259E': 'Huawei',
+            
+            # Microsoft devices
+            '0025AE': 'Microsoft',
+            '50F2D5': 'Microsoft',
+            '985FD3': 'Microsoft',
+            
+            # Netgear devices
+            '000FE9': 'Netgear',
+            'C03F0E': 'Netgear',
+            '008030': 'Netgear',
+            
+            # TP-Link devices
+            '000AEB': 'TP-Link',
+            'EC086B': 'TP-Link',
+            '54E6FC': 'TP-Link',
+            
+            # Linksys devices
+            '000C41': 'Linksys',
+            '001310': 'Linksys',
+            '00121C': 'Linksys',
+            
+            # Asus devices
+            '001BFC': 'Asus',
+            '485D60': 'Asus',
+            '00248C': 'Asus',
+            
+            # Google devices
+            'F4F5D8': 'Google',
+            '94EB2C': 'Google',
+            '2C4D54': 'Google',
+            
+            # Aruba devices
+            '000B86': 'Aruba',
+            '001A1E': 'Aruba',
+            '9C1C12': 'Aruba',
+            
+            # D-Link devices
+            '00179A': 'D-Link',
+            '1CAFF7': 'D-Link',
+            '14D64D': 'D-Link',
+            
+            # Sony devices
+            '001D0D': 'Sony',
+            '001315': 'Sony',
+            'FC0FE6': 'Sony',
+            
+            # Ubiquiti devices
+            '00156D': 'Ubiquiti',
+            'F09FC2': 'Ubiquiti',
+            'DCFB02': 'Ubiquiti',
+            
+            # Xiaomi devices
+            '286C07': 'Xiaomi',
+            '9C99A0': 'Xiaomi',
+            'F8A45F': 'Xiaomi',
+            
+            # Lenovo devices
+            '00061B': 'Lenovo',
+            'E068EB': 'Lenovo',
+            '70720D': 'Lenovo'
             }
             return vendors.get(first_three_octets, 'Unknown')
         except:

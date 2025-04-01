@@ -1,0 +1,58 @@
+2025-03-30 19:00:40,013 - NetworkMonitor - INFO - Monitoring local network: 192.168.1.0/24
+2025-03-30 19:00:40,014 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:00:40,014 - NetworkMonitor - INFO - Network monitoring started.
+2025-03-30 19:00:40,014 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:00:40,014 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:00:45,022 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:00:50,025 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:00:50,025 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:00:50,025 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:00:55,041 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:00,038 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:00,038 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:00,038 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:05,055 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:10,041 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:10,041 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:10,042 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:15,069 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:20,048 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:20,049 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:20,049 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:25,079 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:30,061 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:30,061 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:30,061 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:35,101 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:40,066 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:40,066 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:40,067 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:45,124 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:01:50,076 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:01:50,076 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:50,076 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:01:55,147 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:00,090 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:00,091 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:00,091 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:05,163 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:10,104 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:10,105 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:10,105 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:15,171 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:20,118 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:20,119 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:20,119 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:25,191 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:30,134 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:30,134 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:30,134 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:35,206 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:40,141 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:40,142 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:40,142 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:45,232 - NetworkMonitor - ERROR - Error processing logs: type object 'Queue' has no attribute 'Empty'
+2025-03-30 19:02:50,151 - NetworkMonitor - INFO - Scanning network 192.168.1.0/24...
+2025-03-30 19:02:50,153 - NetworkMonitor - ERROR - Error scanning network: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:50,154 - NetworkMonitor - ERROR - Error during network scan: Sniffing and sending packets is not available at layer 2: winpcap is not installed. You may use conf.L3socket or conf.L3socket6 to access layer 3
+2025-03-30 19:02:51,323 - NetworkMonitor - INFO - Network monitoring stopped.

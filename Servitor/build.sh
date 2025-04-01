@@ -1,0 +1,1 @@
+pyinstaller --name Servitor --noconfirm --windowed --onefile --icon="icon.ico" --add-data "icon.png;." Servitor.py
